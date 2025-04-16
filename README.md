@@ -55,4 +55,4 @@ Preview the pipeline and confirm the transform is working:
 
 The Groovy Processor's init script runs only once, at pipeline startup. This script initializes a Jolt <code>chainr</code> from the Jolt Spec file and saves it in the global cache.
 
-The Groovy Processor's main script uses the cached <code>chainr</code> to apply the transform from the Jolt spec file and overwrites the input JSON with the output JSON.
+The Groovy Processor's main script uses the cached <code>chainr</code> to apply the transform from the Jolt spec file to each record, overwriting the input JSON with the output JSON.
