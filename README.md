@@ -1,6 +1,6 @@
 ## streamsets_jolt_transforms
 
-This project provides an example StreamSets pipeline with a Groovy Processor as a wrapper for [Jolt Transforms](https://github.com/bazaarvoice/jolt)
+This project provides an example StreamSets pipeline with a Groovy Processor that implements [Jolt Transforms](https://github.com/bazaarvoice/jolt).
 
 This project's example JSON input and output files, as well as the Jolt spec file, have been taken directly from the Jolt project's [Getting Started](https://github.com/bazaarvoice/jolt/blob/master/gettingStarted.md) file.
 
