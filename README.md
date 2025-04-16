@@ -14,7 +14,7 @@ The project's example JSON input, output, and spec files have been taken directl
 
 - Clone the [Jolt Project](https://github.com/bazaarvoice/jolt) to your local machine
 
-- Switch to the root of the projet and build it:
+- Switch to the root of the project and build it:
 
 	<code>$ mvn package -DskipTests</code>
 	
