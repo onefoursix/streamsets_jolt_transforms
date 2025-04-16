@@ -7,6 +7,8 @@ This project provides an example StreamSets pipeline with a Groovy Processor as 
 
 - Maven is needed to build the Jolt jar file
 
+- The Groovy 4.0 StreamSets stage lib
+
 ### Build the Jolt project
 
 - Clone the [Jolt Project](https://github.com/bazaarvoice/jolt) to your local machine
@@ -24,4 +26,11 @@ This project provides an example StreamSets pipeline with a Groovy Processor as 
 
 ### Import the example pipeline
 
-Import the example [pipeline](/pipelines)
+Import the example [pipeline](/pipelines).  The pipeline looks like this:
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pipeline.png" alt="pipeline.png" width="500"/>
+
+### Import the two Jolt jar files into the Groovy Stage:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/external-libs.png" alt="external-libs.png" width="500"/>
