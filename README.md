@@ -36,6 +36,7 @@ Import the example [pipeline](/pipelines).  The pipeline looks like this:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/external-libs.png" alt="external-libs.png" width="500"/>
 
+Make sure to restart the engine after adding the jar files.
 
 ### Set pipeline parameters
 
