@@ -42,3 +42,16 @@ Import the example [pipeline](/pipelines).  The pipeline looks like this:
 Set the pipeline parameters including the JSON input and output directories and the Jolt spec file:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/params.png" alt="params.png" width="500"/>
+
+
+### Preview the pipeline
+
+Preview the pipeline and confirm the transform is working:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/preview.png" alt="preview.png" width="700"/>
+
+### Implementation Notes:
+
+The Groovy Processor's init script runs only once, at pipeline startup. This script initializes a Jolt <code>chainr</code> from the Jolt Spec file and saves it in the global cache
+
+The Groovy Processor's main script uses the cached <code>chainr</code> to apply the transform from the Jolt spec file and overwrites the input JSON with the output JSON
