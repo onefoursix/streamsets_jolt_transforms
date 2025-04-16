@@ -8,23 +8,12 @@ Thanks to Jean-Marie.Bertoncelli@ibm.com for recommending the use of Groovy's Js
 
 ### Prerequisites
 
-- Maven is needed to build the Jolt jar file
-
 - The Groovy 4.0 StreamSets stage lib
 
-### Build the Jolt project
+### Download the Jolt jar file
 
-- Clone the [Jolt Project](https://github.com/bazaarvoice/jolt) to your local machine
+- Download <code>jolt-core-0.1.8.jar</code> from [here](https://repo1.maven.org/maven2/com/bazaarvoice/jolt/jolt-core/0.1.8/jolt-core-0.1.8.jar)
 
-- Switch to the root of the project and build it:
-
-	<code>$ mvn package -DskipTests</code>
-	
-- This will generate the jar file we will import into the Groovy stage:
- ```
-		jolt-core/target/jolt-core-0.1.9-SNAPSHOT.jar
-	
-```
 
 ### Import the example pipeline
 
