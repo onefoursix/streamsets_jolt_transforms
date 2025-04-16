@@ -1,8 +1,8 @@
 // Init the Jolt chainr from the Jolt Spec file and save it in the global cache
 import com.bazaarvoice.jolt.Chainr;
-import com.bazaarvoice.jolt.JsonUtils;
+import groovy.json.JsonSlurper
 
-joltSpecFile = sdc.userParams['JOLT_SPEC']
-List chainrSpecJSON = JsonUtils.filepathToList(joltSpecFile)
+joltSpecText = new File(sdc.userParams['JOLT_SPEC']).getText('UTF-8')
+chainrSpecJSON = new JsonSlurper().parseText(joltSpecText)
 Chainr chainr = Chainr.fromSpec( chainrSpecJSON );
 sdc.state['chainr'] = chainr

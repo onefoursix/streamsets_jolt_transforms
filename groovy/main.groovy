@@ -1,5 +1,4 @@
 import com.bazaarvoice.jolt.Chainr;
-import com.bazaarvoice.jolt.JsonUtils;
 
 for (record in sdc.records) {
     try {
@@ -18,4 +17,3 @@ for (record in sdc.records) {
         sdc.error.write(record, e.toString())
     } 
 }
-

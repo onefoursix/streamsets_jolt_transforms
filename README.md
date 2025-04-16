@@ -4,6 +4,8 @@ This project provides an example StreamSets pipeline with a Groovy Processor tha
 
 The project's example JSON input, output, and spec files have been taken directly from the Jolt project's [Getting Started](https://github.com/bazaarvoice/jolt/blob/master/gettingStarted.md) file.
 
+Thanks to Jean-Marie.Bertoncelli@ibm.com for recommending the use of Groovy's JsonSlurper rather than needing to import the Jolt json-utils.
+
 ### Prerequisites
 
 - Maven is needed to build the Jolt jar file
@@ -18,10 +20,9 @@ The project's example JSON input, output, and spec files have been taken directl
 
 	<code>$ mvn package -DskipTests</code>
 	
-- This will generate the two jar files we will import into the Groovy stage:
+- This will generate the jar file we will import into the Groovy stage:
  ```
 		jolt-core/target/jolt-core-0.1.9-SNAPSHOT.jar
-		json-utils/target/json-utils-0.1.9-SNAPSHOT.jar
 	
 ```
 
@@ -32,11 +33,11 @@ Import the example [pipeline](/pipelines).  The pipeline looks like this:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pipeline.png" alt="pipeline.png" width="500"/>
 
-### Import the two Jolt jar files into the Groovy Stage:
+### Import the Jolt jar file into the Groovy Stage:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/external-libs.png" alt="external-libs.png" width="500"/>
 
-Make sure to restart the engine after adding the jar files.
+Make sure to restart the engine after adding the jar file.
 
 ### Set pipeline parameters
 
