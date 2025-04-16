@@ -2,6 +2,7 @@
 
 This project provides an example StreamSets pipeline with a Groovy Processor as a wrapper for [Jolt Transforms](https://github.com/bazaarvoice/jolt)
 
+This project's example JSON input and output files, as well as the Jolt spec file, have been taken directly from the Jolt project's [Getting Started](https://github.com/bazaarvoice/jolt/blob/master/gettingStarted.md) file.
 
 ### Prerequisites
 
@@ -34,3 +35,10 @@ Import the example [pipeline](/pipelines).  The pipeline looks like this:
 ### Import the two Jolt jar files into the Groovy Stage:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/external-libs.png" alt="external-libs.png" width="500"/>
+
+
+### Set pipeline parameters
+
+Set the pipeline parameters including the JSON input and output directories and the Jolt spec file:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/params.png" alt="params.png" width="500"/>
